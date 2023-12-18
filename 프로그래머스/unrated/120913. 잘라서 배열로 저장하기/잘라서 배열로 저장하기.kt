@@ -1,7 +1,6 @@
 class Solution {
     fun solution(my_str: String, n: Int): Array<String> {
         var answer: Array<String> = arrayOf<String>()
-        var endPoint = 0 
         for(i in my_str.indices step n) {
             if(my_str.length >=  i + n) answer += my_str.substring(i until n+i)
             else answer += my_str.substring(i)
