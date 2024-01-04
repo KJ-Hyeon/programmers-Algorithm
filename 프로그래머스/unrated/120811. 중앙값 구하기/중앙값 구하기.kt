@@ -3,12 +3,7 @@ class Solution {
         var answer: Int = 0
         var index: Int = 0
         array.sort()
-        index = if(array.size % 2 == 0) {
-            array.size / 2 - 1
-        } else {
-            array.size / 2 
-        }
-        answer = array[index]
+        answer = array[array.size / 2]
         return answer
     }
 }
